@@ -20,7 +20,7 @@ const app = express();
 
 
 
-app.use(cors({origin:["http://localhost:5173", "http://localhost:5174"],credentials:true})); // Enable CORS for frontend requests
+app.use(cors({origin:["http://localhost:5173", "https://freelancer-project-frontend.onrender.com"],credentials:true})); // Enable CORS for frontend requests
 app.use(express.json()); //middleware
 app.use(cookieParser());
 
