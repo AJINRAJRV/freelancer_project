@@ -1,0 +1,131 @@
+.message {
+    display: flex;
+    justify-content: center;
+  
+    .container {
+      width: 900px; /* Ensures both messages & input are aligned */
+      margin: 50px auto; /* Centers everything */
+  
+      .breadcrumbs {
+        font-weight: 300;
+        font-size: 13px;
+        color: #555;
+      }
+  
+      /* Messages Container */
+      .messages {
+        margin: 20px 0;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        max-height: 450px;
+        overflow-y: auto;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+        width: 100%; /* Ensures full width inside container */
+        box-sizing: border-box;
+  
+        /* Custom Scrollbar */
+        &::-webkit-scrollbar {
+          width: 6px;
+        }
+  
+        &::-webkit-scrollbar-track {
+          background: #f1f1f1;
+          border-radius: 10px;
+        }
+  
+        &::-webkit-scrollbar-thumb {
+          background: #aaa;
+          border-radius: 10px;
+        }
+  
+        &::-webkit-scrollbar-thumb:hover {
+          background: #888;
+        }
+  
+        .item {
+          display: flex;
+          gap: 15px;
+          max-width: 600px;
+          font-size: 16px;
+  
+          &.owner {
+            flex-direction: row-reverse;
+            align-self: flex-end;
+  
+            p {
+              border-radius: 20px 0px 20px 20px;
+              background-color: royalblue;
+              color: white;
+            }
+          }
+  
+          img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+          }
+  
+          p {
+            padding: 15px;
+            background-color: lightgray;
+            border-radius: 0px 20px 20px 20px;
+            font-weight: 300;
+          }
+        }
+      }
+  
+      hr {
+        height: 0;
+        border: 0.5px solid rgb(234, 234, 234);
+        margin-bottom: 20px;
+      }
+  
+      /* Taskbar (Text Area + Button) */
+      .write {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px;
+        border: 1px solid lightgray;
+        border-radius: 10px;
+        background: white;
+        width: 100%; /* Matches messages container */
+        box-sizing: border-box; /* Prevents width issues */
+        position: sticky;
+        bottom: 0;
+  
+        textarea {
+          width: 75%;
+          height: 80px;
+          padding: 10px;
+          border: 1px solid lightgray;
+          border-radius: 10px;
+          font-size: 16px;
+          resize: none;
+        }
+  
+        button {
+          background-color: #1dbf73;
+          padding: 15px;
+          color: white;
+          font-weight: 500;
+          border: none;
+          border-radius: 10px;
+          cursor: pointer;
+          width: 100px;
+          transition: 0.3s ease;
+  
+          &:hover {
+            background-color: #17a864;
+          }
+        }
+      }
+    }
+  }
+
+  

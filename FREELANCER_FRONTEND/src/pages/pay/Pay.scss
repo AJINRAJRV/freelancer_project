@@ -1,0 +1,52 @@
+.pay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 100px); // Adjust height to fit between navbar & footer
+    padding: 40px 0; // Add some spacing but not too much
+    background-color: #f8f9fa;
+  
+    .StripeElement {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    form {
+      width: 100%;
+      max-width: 400px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  
+      button {
+        width: 100%;
+        padding: 12px;
+        background: #635bff;
+        color: white;
+        border: none;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+  
+        &:hover {
+          background: #5046e5;
+        }
+      }
+    }
+  }
+  
+  /* Responsive Fix */
+  @media (max-width: 768px) {
+    .pay {
+      padding: 20px;
+      min-height: calc(100vh - 120px); // Adjust for mobile screens
+    }
+  
+    form {
+      width: 90%;
+      max-width: 350px;
+    }
+  }
+  
