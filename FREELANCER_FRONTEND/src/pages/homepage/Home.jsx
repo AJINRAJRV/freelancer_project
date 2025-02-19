@@ -7,7 +7,7 @@ import TrustedBy from "../../components/trustedBy/TrustedBy";
 import Slide from '../../components/Slide/Slide';
 import {cards, projects} from '../../data'
 import CatCard from "../../components/catCard/CatCard";
-import ProjectCard from "../../components/projectCard/projectCard";
+import ProjectCard from "../../components/projectCard/ProjectCard";
 import { Link } from "react-router-dom";
 
 import { useEffect } from "react";
